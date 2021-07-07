@@ -111,6 +111,7 @@
 
     <!-- Button1. -->
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
         app:layout_constraintStart_toStartOf="@id/guide_start"
         app:layout_constraintEnd_toEndOf="@id/guide_end"
         app:layout_constraintBottom_toTopOf="@id/btn_new_task"
