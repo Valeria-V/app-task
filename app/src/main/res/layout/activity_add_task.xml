@@ -71,28 +71,27 @@
     <!-- Input2 Data. -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_date"
-        android:layout_width="0dp"
-        app:layout_constraintStart_toStartOf="@id/guide_start"
-        app:layout_constraintEnd_toStartOf="@id/til_hour"
-        app:layout_constraintTop_toBottomOf="@id/til_description"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
         android:hint="@string/label_date"
-        app:startIconDrawable="@drawable/ic_calendar"
-        android:layout_margin="16dp">
+        app:layout_constraintEnd_toStartOf="@id/til_hour"
+        app:layout_constraintStart_toStartOf="@+id/guide_start"
+        app:layout_constraintTop_toBottomOf="@id/til_description"
+        app:startIconDrawable="@drawable/ic_calendar">
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="match_parent"
-        android:inputType="none"
-        android:focusable="false"
-        android:layout_height="wrap_content" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="none" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Input2 Hora. -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_hour"
-        android:layout_width="0dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:hint="@string/label_hour"
